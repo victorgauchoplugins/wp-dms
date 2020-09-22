@@ -1,18 +1,24 @@
 === Domain Mapping System ===
-Contributors: deniaz
+Contributors: deniaz, victoralbala
 Author URI: http://www.cheekyowl.com
 Plugin URI: http://projects.cheekyowl.com/wp-dms
-Tags: domain, url, vhost, microsite
-Requires at least: 3.1
-Tested up to: 3.4.2
-Stable tag: 1.3.2
-Version: 1.3.2
+Tags: adopt-me, domain, url, vhost, microsite
+Requires at least: 5.1
+Tested up to: 5.5
+Stable tag: 1.4
+Version: 1.4
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 Domain Mapping System allows to map domains to WP pages and/or custom types.
 
 == Description ==
+
+= Up for adoption =
+I'm looking for a developer to adopt the plugin. I've started [rewriting the plugin](https://github.com/deniaz/wp-dms/tree/develop)
+with a more modern approach (composer, psr-4, ...), various bugfixes and new features. Please get in contact with me
+on either [GitHub](https://github.com/deniaz) or [@_deniaz on Twitter](https://twitter.com/_deniaz) if you're interested
+in taking over as I'm not involved with WordPress anymore (at least for the moment).
 
 = Important Links =
 

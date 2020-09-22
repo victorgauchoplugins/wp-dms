@@ -4,12 +4,12 @@
         init: function() {
             var that = this;
             
-            $('#dms-submit-config').live('hover', function() {
+            $('#dms-submit-config').on('mouseenter mouseleave', function() {
                 var string = that.collect();
                 $('#dms_map').val(string);
             });
             
-            $('#dms-submit-config').live('click', function(e) {
+            $('#dms-submit-config').on('click', function(e) {
                check = confirm("Are you sure to change these settings?");
                if (check === false) {
                    e.preventDefault();
@@ -32,11 +32,11 @@
     var controls = {
         init: function() {
             var that = this;
-            $('.dms-delete-row').live('click', function() {
+            $('.dms-delete-row').on('click', function() {
                 that.removeRow($(this));
             });
             
-            $('.dms-add-row').live('click', function(e) {
+            $('.dms-add-row').on('click', function(e) {
                 e.preventDefault();
                 that.addRow($(this));
             });

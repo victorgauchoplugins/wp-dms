@@ -18,7 +18,9 @@
                 </label>
                 <?php
                     $types = DMS::getCustomPostTypes();
-
+                    
+                    
+                 
                     foreach ($types as $type)
                     {
                         echo "<label for=\"dms_use_{$type['name']}\">";
@@ -40,6 +42,7 @@
                             $value = get_option("dms_use_{$type['name']}_archive");
                             if ($value === 'on')
                             {
+                            
                                 echo "<input class=\"hide-postbox-tog\" name=\"dms_use_{$type['name']}_archive\" type=\"checkbox\" id=\"dms_use_{$type['name']}_archive\" checked=\"checked\">";
                             }
                             else
@@ -72,7 +75,7 @@
 </div>
 <!-- Actual Stuff -->
 <div class="wrap">
-    <?php echo screen_icon(); ?>
+    <?php //echo screen_icon(); ?>
     <h2>Domain Mapping System Configuration</h2>
     <div class="updated">
         <p><strong>Warning!</strong></p>
@@ -90,10 +93,13 @@
                 </tr>
                     <?php
                          $string = get_option('dms_map');
+   
                          parse_str($string, $map);
          
+                        
                          foreach ($map as $key => $value)
                          {
+                             
                              ?>
                              <tr>
                                  <th></th>
@@ -103,6 +109,7 @@
                                      <span class="post-host">/</span>
                                      <?php 
                                          $options = DMS::getDMSOptions();
+                             
                                      ?>
                                      <select class="dms page_id" name="page_id" data-placeholder="The choice is yours.">
                                          <option></option>
